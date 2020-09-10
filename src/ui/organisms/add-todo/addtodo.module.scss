@@ -1,0 +1,17 @@
+@import '../../../style/variables.scss';
+
+.container {
+    padding: 0 48px;
+}
+
+.text {
+    font-family: $ABeeZee;
+    font-style: italic;
+    text-align: center;
+    color: $primary;
+}
+
+.content {
+    margin-top: 64px;
+    padding: 0 64px;
+}
