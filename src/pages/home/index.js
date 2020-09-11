@@ -4,12 +4,11 @@ import AddTodo from '../../components/add-todo'
 import SubTitle from '../../ui/subtitle'
 import { container, title, todoList  } from './home.module.scss'
 import { useSelector } from 'react-redux';
-import { getGroupedByDateTodos, getLatestTodos } from '../../redux/selectors/index';
+import getLatestTodos from '../../redux/selectors/latestTodos';
 
 const Home = () => {
 
-    // const todos = useSelector(state => getLatestTodos(state.todos))
-    const todos = useSelector(state => getGroupedByDateTodos(state.todos))
+    const todos = useSelector(state => getLatestTodos(state.todos))
 
     console.log(todos)
 
@@ -18,10 +17,10 @@ const Home = () => {
 
             <AddTodo />
 
-            {/* <div className={todoList}>
+            <div className={todoList}>
                 <SubTitle className={title}>Latest Todos</SubTitle>
                 <TodoList todos={todos} />
-            </div> */}
+            </div>
         </div>
     )
 }

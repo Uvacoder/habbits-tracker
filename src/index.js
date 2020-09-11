@@ -6,9 +6,11 @@ import { Provider } from 'react-redux'
 import { todoReducer } from './redux/reducers/todo'
 import './style/index.scss'
 import "react-datepicker/dist/react-datepicker.css"
+import { visibilityFilter } from './redux/reducers/filter'
 
 const rootReducer = combineReducers({
-    todos: todoReducer
+    todos: todoReducer,
+    visibility: visibilityFilter
 })
 
 const store = createStore(

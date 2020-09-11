@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Calendar from './components/calendar';
 import Home from './pages/home/index';
 import Layout from './ui/layout';
 
@@ -9,6 +10,7 @@ function App() {
             <Layout>
                 <Switch>
                     <Route path='/' exact component={Home} />
+                    <Route path='/calendar' exact component={Calendar} />
                 </Switch>
             </Layout>
         </BrowserRouter>

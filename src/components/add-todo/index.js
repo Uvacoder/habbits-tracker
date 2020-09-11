@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AddTodo from './addTodo'
 import { useDispatch } from 'react-redux'
-import { addTodoAction } from '../../redux/actions/todo'
+import { addTodoAction } from '../../redux/actions'
 import { format } from 'date-fns'
 
 const AddTodoContainer = () => {
@@ -14,10 +14,10 @@ const AddTodoContainer = () => {
 
     const addTodo = () => {
         dispatch(addTodoAction({
-            priority,
-            deadline: format(selectedDate, 'MM/dd/yyyy EEEE'),
+            id: Math.random().toString(),
             text,
-            id: Math.random().toString()
+            deadline: format(selectedDate, 'MM/dd/yyyy EEEE'),
+            priority,
         }))
 
         setDate(new Date())

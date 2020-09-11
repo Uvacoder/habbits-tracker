@@ -6,6 +6,12 @@ export const PRIORITY_OPTIONS = [
     { value: 1, label: 'High'}
 ]
 
+export const VISIBLITY_OPTIONS = [
+    { value: 'SHOW_ALL', label: 'All'},
+    { value: 'SHOW_COMPLETED', label: 'Done'},
+    { value: 'SHOW_ACTIVE', label: 'Active'},
+]
+
 const size = 20
 const color = '#C6A567' 
 

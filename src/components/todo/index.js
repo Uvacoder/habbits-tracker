@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { changeStatusAction, deleteTodoAction } from '../../redux/actions/todo'
+import { changeStatusAction, deleteTodoAction } from '../../redux/actions'
 import Todo from './todo'
 
 const TodoContainer = ({ todo }) => {

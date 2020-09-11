@@ -9,11 +9,17 @@ const RadioGroup = ({ options, currentValue, onChange }) => {
             {
                 options.map( (option, i) => (
                     <>
-                        <label 
+                        <label
                             className={classnames(label, {[checked]: option.value === currentValue})} 
-                            htmlFor={option.value}> {option.label} 
+                            htmlFor={option.value}> {option.label}
                         </label>
-                        <input className={radio} id={option.value} type='radio' checked={option.value === currentValue} onChange={() => onChange(i)} />
+                        <input 
+                            type='radio' 
+                            id={option.value} 
+                            className={radio} 
+                            onChange={() => onChange(option.value)} 
+                            checked={option.value === currentValue}
+                        />
                     </>
                 ))
             }
