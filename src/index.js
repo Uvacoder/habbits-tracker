@@ -1,14 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import { createStore } from 'redux'
+import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 import { todoReducer } from './redux/reducers/todo'
 import './style/index.scss'
 import "react-datepicker/dist/react-datepicker.css"
 
+const rootReducer = combineReducers({
+    todos: todoReducer
+})
+
 const store = createStore(
-    todoReducer,
+    rootReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 

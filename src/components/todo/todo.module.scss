@@ -1,0 +1,11 @@
+@import '../../style/variables.scss';
+
+.todo_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}

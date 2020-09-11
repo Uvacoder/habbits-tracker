@@ -1,4 +1,4 @@
-@import '../../../style/variables.scss';
+@import '../../style/variables.scss';
 
 .container {
     display: inline-flex;
@@ -19,6 +19,7 @@
     padding-left: 32px;
     color: #BDBDBD;
     transition: .2s;
+    user-select: none;
 }
 
 .checkbox {

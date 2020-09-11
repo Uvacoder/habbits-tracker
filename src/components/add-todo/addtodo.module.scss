@@ -1,0 +1,12 @@
+.form {
+    margin-top: 64px;
+}
+
+.todo_options {
+    display: flex;
+    margin-top: 32px;
+
+    > div {
+        width: 50%;
+    }
+}
