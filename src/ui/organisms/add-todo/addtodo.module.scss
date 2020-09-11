@@ -11,7 +11,28 @@
     color: $primary;
 }
 
-.content {
+.form {
     margin-top: 64px;
     padding: 0 64px;
+}
+
+.todo_options {
+    display: flex;
+    margin-top: 32px;
+
+    > div {
+        width: 50%;
+    }
+}
+
+.day {
+    background-color: $primary !important;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.todoList {
+    margin-top: 64px;
 }

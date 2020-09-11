@@ -1,3 +1,27 @@
-.red {
-    color: red;
+@import '../../../style/variables.scss';
+
+.radio {
+    width: 0;
+}
+
+.label {
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: $ABeeZee;
+    text-transform: uppercase;
+    display: inline-flex;
+    transition: .2s;
+    font-size: 14px;
+    background-color: $dark-gray;
+    color: $light-gray;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.checked {
+    background-color: $primary;
+    color: white;
 }

@@ -5,6 +5,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import { todoReducer } from './redux/reducers/todo'
 import './style/index.scss'
+import "react-datepicker/dist/react-datepicker.css"
 
 const store = createStore(
     todoReducer,
@@ -12,10 +13,8 @@ const store = createStore(
 )
 
 ReactDOM.render(
-    <React.StrictMode>
         <Provider store={store}>
             <App />
-        </Provider>
-    </React.StrictMode>,
+        </Provider>,
     document.getElementById('root')
 )

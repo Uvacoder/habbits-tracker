@@ -2,9 +2,8 @@ import React from 'react'
 import { RiHome7Fill, RiCalendar2Fill, RiPriceTag3Fill, RiSearch2Line } from 'react-icons/ri'
 
 export const PRIORITY_OPTIONS = [
-    { value: 0, label: 'Now'},
-    { value: 1, label: 'Next'},
-    { value: 2, label: 'Soon'}
+    { value: 0, label: 'Low'},
+    { value: 1, label: 'High'}
 ]
 
 const size = 20
