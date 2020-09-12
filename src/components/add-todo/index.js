@@ -7,22 +7,25 @@ import { format } from 'date-fns'
 const AddTodoContainer = () => {
     
     const [ selectedDate, setDate ] = useState(new Date())
-    const [ priority, setPriority ] = useState(0)
+    const [ priority, setPriority ] = useState('SHOW_LOW')
     const [ text, setText ] = useState('')
     
     const dispatch = useDispatch()
 
     const addTodo = () => {
-        dispatch(addTodoAction({
-            id: Math.random().toString(),
-            text,
-            deadline: format(selectedDate, 'MM/dd/yyyy EEEE'),
-            priority,
-        }))
-
-        setDate(new Date())
-        setText('')
-        setPriority(0)
+        
+        if(text.trim() !== '') {
+            dispatch(addTodoAction({
+                id: Math.random().toString(),
+                text: text.trim(),
+                deadline: format(selectedDate, 'MM/dd/yyyy EEEE'),
+                priority,
+            }))
+            
+            setDate(new Date())
+            setText('')
+            setPriority('SHOW_LOW')
+        }
     }
 
     const props = {

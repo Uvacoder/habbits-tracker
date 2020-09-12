@@ -5,7 +5,7 @@ const TodoList = ({ todos }) => {
     return (
         <>
             {
-                todos.map( todo => (
+                todos.map(todo => (
                     <Todo todo={todo} />
                 ))
             }

@@ -1,21 +1,32 @@
 @import '../../style/variables.scss';
 
 .container {
-    max-width: 768px;
+    max-width: $screen-md;
     margin: 0 auto;
-    padding: 64px 0;
+    padding: 64px 16px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
+    flex-direction: column-reverse;
 
-.menu {
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    grid-column-gap: 32px;;
+    @include media-query($screen-md) {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .menu {
+            margin-top: 0;
+        }
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        grid-column-gap: 32px;;
+        margin-top: 32px;
+    }
 }
 
 .logo {

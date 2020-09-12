@@ -10,3 +10,16 @@
         width: 50%;
     }
 }
+
+.input {
+    input {
+        
+        &:valid {
+            border-bottom-color: #27ae60;
+        }
+
+        &:invalid:not(:placeholder-shown) {
+            border-bottom-color: #FF6464;
+        }
+    }
+}

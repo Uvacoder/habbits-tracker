@@ -20,16 +20,18 @@
     color: #BDBDBD;
     transition: .2s;
     user-select: none;
+    overflow-wrap: anywhere;
 }
 
 .checkbox {
     width: 16px;
     height: 16px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 3px solid $primary;
     background-color: transparent;
     transition: .2s;
+    flex-shrink: 0;
 }
 
 .checked {

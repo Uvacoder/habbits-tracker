@@ -1,5 +1,11 @@
+@import '../../style/variables.scss';
+
 .container {
-    padding: 0 112px;
+    
+    @include media-query($screen-md) {
+        padding: 0 112px;
+    }
+
 }
 
 .title {

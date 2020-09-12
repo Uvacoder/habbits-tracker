@@ -1,6 +1,6 @@
 import React from 'react'
 import { NAVIGATION } from '../../helper/constants'
-import MenuItem from '../atoms/menu-item'
+import MenuItem from '../menu-item'
 import { NavLink } from 'react-router-dom'
 import { navbar, menu, logo, hr } from './layout.module.scss'
 

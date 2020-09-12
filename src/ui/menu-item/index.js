@@ -5,8 +5,7 @@ import styles from './menuitem.module.scss'
 const MenuItem = ({ path, label, icon }) => {
     return (
         <NavLink exact to={path} className={styles.menu_item} activeClassName={styles.active}>
-            <span> {label} </span>
-            {icon}
+            {label}
         </NavLink>
     )
 }

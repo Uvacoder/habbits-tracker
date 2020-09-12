@@ -1,0 +1,22 @@
+@import '../../style/variables.scss';
+
+.header {
+    .search_bar {
+        margin-bottom: 32px;
+    }
+    
+    @include media-query($screen-md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .search_bar {
+            width: 60%;
+            margin: 0;
+        }
+    }
+}
+
+.todo_list {
+    margin-top: 64px;
+}

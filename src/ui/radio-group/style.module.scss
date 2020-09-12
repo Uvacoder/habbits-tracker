@@ -2,6 +2,8 @@
 
 .radio {
     width: 0;
+    height: 0;
+    position: absolute;
 }
 
 .label {
@@ -15,8 +17,9 @@
     font-size: 14px;
     background-color: $dark-gray;
     color: $light-gray;
+    user-select: none;
 
-    &:not(:last-child) {
+    &:not(:last-of-type) {
         margin-right: 10px;
     }
 }

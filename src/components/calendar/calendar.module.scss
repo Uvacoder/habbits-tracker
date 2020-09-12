@@ -1,13 +1,17 @@
 @import '../../style/variables.scss';
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 32px;
-
+    
     .title {
         font-size: 16px;
+        margin: 0 0 32px 0;
+    }
+    
+    @include media-query($screen-md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         margin: 0;
     }
 }

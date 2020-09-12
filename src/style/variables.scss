@@ -7,8 +7,17 @@ $ABeeZee: 'ABeeZee', sans-serif;
 
 // Colors
 
-// $dark: #171717;
 $dark: #353b48;
 $dark-gray: #62625F;
 $light-gray: #C4C4C4;
 $primary: #C6A567;
+
+// Screen Sizes
+
+$screen-md: 768px;
+
+@mixin media-query($screen-size) {
+    @media screen and (min-width: #{$screen-size}) {
+        @content;
+    }
+}

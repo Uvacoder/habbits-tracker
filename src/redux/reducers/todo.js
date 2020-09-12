@@ -5,7 +5,7 @@ const initialState = [
         id: 'asd123a',
         text: 'getir\'den sipariş ver',
         completed: false,
-        priority: 0,
+        priority: 'SHOW_LOW',
         deadline: '09/11/2020 Friday'
     }
 ]

@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Calendar from './components/calendar';
+import Search from './components/search';
 import Home from './pages/home/index';
 import Layout from './ui/layout';
 
@@ -11,6 +12,7 @@ function App() {
                 <Switch>
                     <Route path='/' exact component={Home} />
                     <Route path='/calendar' exact component={Calendar} />
+                    <Route path='/search' exact component={Search} />
                 </Switch>
             </Layout>
         </BrowserRouter>

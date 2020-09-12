@@ -1,14 +1,14 @@
 import React from 'react'
-import styles from './input.module.scss'
-import { RiSendPlane2Fill } from "react-icons/ri"
 import Button from '../button'
+import classnames from 'classnames'
+import { input, button } from './input.module.scss'
 
-const Input = ({ icon, onClickButton, ...props }) => {
+const Input = ({ icon, onClickButton, onChange, className, ...props }) => {
     return (
-        <div className={styles.input}>
-            <input type='text' {...props} />
+        <div className={classnames(input, className)}>
+            <input type='text' onChange={onChange} {...props} />
             
-            {icon && <Button onClick={onClickButton} type='transparent' className={styles.button} icon={<RiSendPlane2Fill size={20} />} />}
+            {icon && <Button onClick={onClickButton} type='transparent' className={button} icon={icon} />}
         </div>
     )
 }
