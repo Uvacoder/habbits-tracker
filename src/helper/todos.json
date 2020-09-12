@@ -2,14 +2,14 @@
     {
         "id": "asd2",
         "text": "30 dk koşu yap",
-        "completed": false,
+        "completed": true,
         "priority": "SHOW_LOW",
         "deadline": "09/12/2020"
     },
     {
         "id": "asd3",
         "text": "kitap oku",
-        "completed": true,
+        "completed": false,
         "priority": "SHOW_HIGH",
         "deadline": "09/11/2020"
     },

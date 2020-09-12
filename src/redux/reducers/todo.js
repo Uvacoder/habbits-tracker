@@ -1,16 +1,6 @@
 import { ADD_TODO, CHANGE_STATUS, DELETE_TODO } from '../actions/actionTypes'
 import todos from '../../helper/todos.json'
 
-const initialState = [
-    {
-        id: 'asd123a',
-        text: 'getir\'den sipariş ver',
-        completed: false,
-        priority: 'SHOW_LOW',
-        deadline: '09/11/2020 Friday'
-    }
-]
-
 export const todoReducer = (state = todos, action) => {
     switch(action.type) {
         
