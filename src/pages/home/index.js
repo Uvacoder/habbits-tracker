@@ -10,8 +10,6 @@ const Home = () => {
 
     const todos = useSelector(state => getLatestTodos(state.todos))
 
-    console.log(todos)
-
     return (
         <div className={container}>
 

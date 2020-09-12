@@ -4,6 +4,7 @@ import SubTitle from '../../ui/subtitle'
 import TodoList from '../todo-list'
 import { VISIBLITY_OPTIONS } from '../../helper/constants'
 import { header, title, date_title, content } from './calendar.module.scss'
+import format from 'date-fns/format'
 
 const Calendar = ({ todos, visibility, changeVisibilityFilter }) => {
     
@@ -16,7 +17,7 @@ const Calendar = ({ todos, visibility, changeVisibilityFilter }) => {
             {
                 Object.entries(todos).map(([date, todos]) => (
                     <>
-                        <h6 className={date_title}>{date}</h6>
+                        <h6 className={date_title}>{format(new Date(date), 'MM/dd/yyyy EEEE')}</h6>
                         <div className={content}>
                             {
                                 <TodoList todos={todos} />

@@ -1,4 +1,5 @@
 import { ADD_TODO, CHANGE_STATUS, DELETE_TODO } from '../actions/actionTypes'
+import todos from '../../helper/todos.json'
 
 const initialState = [
     {
@@ -10,7 +11,7 @@ const initialState = [
     }
 ]
 
-export const todoReducer = (state = initialState, action) => {
+export const todoReducer = (state = todos, action) => {
     switch(action.type) {
         
         case ADD_TODO:

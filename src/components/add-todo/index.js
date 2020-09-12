@@ -18,7 +18,7 @@ const AddTodoContainer = () => {
             dispatch(addTodoAction({
                 id: Math.random().toString(),
                 text: text.trim(),
-                deadline: format(selectedDate, 'MM/dd/yyyy EEEE'),
+                deadline: format(selectedDate, 'MM/dd/yyyy'),
                 priority,
             }))
             

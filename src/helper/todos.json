@@ -1,0 +1,30 @@
+[
+    {
+        "id": "asd2",
+        "text": "30 dk koşu yap",
+        "completed": false,
+        "priority": "SHOW_LOW",
+        "deadline": "09/12/2020"
+    },
+    {
+        "id": "asd3",
+        "text": "kitap oku",
+        "completed": true,
+        "priority": "SHOW_HIGH",
+        "deadline": "09/11/2020"
+    },
+    {
+        "id": "asd4",
+        "text": "yapılacak olan bu şey hiçbir şekilde  bir satıra sığmaması için bu kadar uzun yazıldı",
+        "completed": false,
+        "priority": "SHOW_LOW",
+        "deadline": "09/12/2020"
+    },
+    {
+        "id": "asd1",
+        "text": "getir'den sipariş ver",
+        "completed": true,
+        "priority": "SHOW_HIGH",
+        "deadline": "09/11/2020"
+    }
+]

@@ -43,6 +43,7 @@ const AddTodo = (props) => {
                     <DatePicker
                         selected={selectedDate}
                         closeOnScroll
+                        minDate={new Date()}
                         onChange={date => setDate(date)}
                         customInput={<Input style={{ fontSize: 14, paddingLeft: 0, paddingTop: 0 }} />}
                     />

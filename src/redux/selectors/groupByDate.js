@@ -4,7 +4,9 @@ import getVisibleTodos from './visibleTodos'
 
 const getGroupedByDateTodos = createSelector(
     getVisibleTodos,
-    todos => groupBy(todos, 'deadline')
+    todos => {
+        return groupBy(todos.sort((a, b) => new Date(a.deadline) - new Date(b.deadline)), 'deadline')
+    }
 )
 
 export default getGroupedByDateTodos
