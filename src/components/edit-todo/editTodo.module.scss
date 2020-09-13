@@ -1,0 +1,26 @@
+@import '../../style//variables.scss';
+
+.modal_body {
+    padding: 24px;
+}
+
+.input {
+    width: 100%;
+    margin-right: 25px;
+}
+
+.priority_title {
+    margin-top: 25px;
+}
+
+.subtitle {
+    color: $primary;
+    margin: 25px 0;
+}
+
+.button {
+    margin-top: 25px;
+    border-radius: 6px;
+    padding: 5px 15px;
+    margin-left: auto;
+}

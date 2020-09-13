@@ -33,6 +33,10 @@
     color: $primary;
     font-size: 48px;
     text-decoration: none;
+
+    &:hover {
+        color: $primary;
+    }
 }
 
 .hr {

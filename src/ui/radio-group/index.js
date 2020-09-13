@@ -4,20 +4,25 @@ import classnames from 'classnames'
 
 const RadioGroup = ({ options, currentValue, onChange }) => {
     
+    const newOptions = options.map( option => ({
+        ...option,
+        id: Math.random() // If model is open, label id's must be unique.
+    }))
+
     return (
         <div className={container}>
             {
-                options.map( (option, i) => (
+                newOptions.map( (option) => (
                     <>
                         <label
                             className={classnames(label, {[checked]: option.value === currentValue})} 
-                            htmlFor={option.value}> {option.label}
+                            htmlFor={option.id}> {option.label}
                         </label>
                         <input 
                             type='radio' 
-                            id={option.value} 
+                            id={option.id} 
                             className={radio} 
-                            onChange={() => onChange(option.value)} 
+                            onChange={() => onChange(option.value)}
                             checked={option.value === currentValue}
                         />
                     </>

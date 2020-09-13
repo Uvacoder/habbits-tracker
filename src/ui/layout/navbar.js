@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className={menu}>
                 {
                     NAVIGATION.map( item => (
-                        <MenuItem path={item.path} label={item.label} icon={item.icon} />
+                        <MenuItem key={item.path} path={item.path} label={item.label} icon={item.icon} />
                     ))
                 }
             </div>

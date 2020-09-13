@@ -1,7 +1,8 @@
 import { 
     ADD_TODO, 
     CHANGE_STATUS, 
-    DELETE_TODO, 
+    DELETE_TODO,
+    EDIT_TODO,
     SET_KEYWORD, 
     SET_PRIORITY_FILTER,
     SET_VISIBILITY_FILTER 
@@ -22,6 +23,12 @@ export const deleteTodoAction = id => ({
     id
 })
 
+export const editTodoAction = (payload, id) => ({
+    type: EDIT_TODO,
+    payload,
+    id
+})
+
 export const setVisibilityFilter = filter => ({
     type: SET_VISIBILITY_FILTER,
     filter
@@ -35,4 +42,10 @@ export const setPriorityFilter = filter => ({
 export const setKeyword = keyword => ({
     type: SET_KEYWORD,
     keyword
+})
+
+export const setModalVisibility = (visibility, id) => ({
+    type: 'SET_MODAL_VISIBILITY',
+    visibility,
+    id
 })

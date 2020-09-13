@@ -2,7 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 import styles from './button.module.scss'
 
-const Button = ({icon, type, className, ...props}) => {
+const Button = ({icon, type, className, children, ...props}) => {
     
     const classNames = classnames(
         styles.button,
@@ -13,6 +13,7 @@ const Button = ({icon, type, className, ...props}) => {
     return (
         <button className={classNames} {...props} >
             {icon}
+            {children}
         </button>
     )
 }

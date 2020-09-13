@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { changeStatusAction, deleteTodoAction } from '../../redux/actions'
+import { changeStatusAction, deleteTodoAction, setModalVisibility } from '../../redux/actions'
 import Todo from './todo'
 
 const TodoContainer = ({ todo }) => {
@@ -15,8 +15,19 @@ const TodoContainer = ({ todo }) => {
         dispatch(changeStatusAction(todo.id))
     }
 
+    const openModal = () => {
+        dispatch(setModalVisibility(true, todo.id))
+    }
+
+    const props = {
+        todo,
+        deleteTodo,
+        changeStatus,
+        openModal
+    }
+
     return (
-        <Todo todo={todo} deleteTodo={deleteTodo} changeStatus={changeStatus} />
+        <Todo {...props} />
     )
 }
 
