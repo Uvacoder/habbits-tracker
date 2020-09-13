@@ -4,6 +4,7 @@
 
 #### Local
 ```bash
+git clone https://github.com/yilmazcakmakci/habb.it
 cd habb.it
 npm i
 npm start
